@@ -81,7 +81,7 @@ import HelloWorld from './components/HelloWorld.vue'
   <section class="hero">
     <div class="hero-body">
       <p class="title">
-        Hero title
+         Titulo
       </p>
       <p class="subtitle">
         Hero subtitle
