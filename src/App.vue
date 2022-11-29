@@ -83,16 +83,6 @@ import Carousel from './components/Carousel.vue'
 
   <Carousel></Carousel>
 
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
-		<script>
-			bulmaCarousel.attach('#carousel-demo', {
-				slidesToScroll: 1,
-				slidesToShow: 4
-			});
-		</script> -->
-
-
-  <!-- Slideshow / Carousel -->
   <section class="hero">
     <div class="hero-body">
       <div class="container has-text-centered">
