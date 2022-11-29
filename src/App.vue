@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import Carousel from './components/Carousel.vue'
+
 </script>
 
 <template>
@@ -17,7 +19,8 @@ import HelloWorld from './components/HelloWorld.vue'
     </div>
   </header> -->
 
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <!-- Barra de navegación -->
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="https://bulma.io">
         <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
@@ -37,10 +40,10 @@ import HelloWorld from './components/HelloWorld.vue'
         </a>
 
         <a class="navbar-item">
-          Documentation
+          Sobre nosotros
         </a>
 
-        <div class="navbar-item has-dropdown is-hoverable">
+        <!-- <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">
             More
           </a>
@@ -60,11 +63,11 @@ import HelloWorld from './components/HelloWorld.vue'
               Report an issue
             </a>
           </div>
-        </div>
+        </div> -->
       </div>
 
       <div class="navbar-end">
-        <div class="navbar-item">
+        <!-- <div class="navbar-item">
           <div class="buttons">
             <a class="button is-primary">
               <strong>Sign up</strong>
@@ -73,30 +76,46 @@ import HelloWorld from './components/HelloWorld.vue'
               Log in
             </a>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </nav>
 
+  <Carousel></Carousel>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+		<script>
+			bulmaCarousel.attach('#carousel-demo', {
+				slidesToScroll: 1,
+				slidesToShow: 4
+			});
+		</script> -->
+
+
+  <!-- Slideshow / Carousel -->
   <section class="hero">
     <div class="hero-body">
-      <p class="title">
-         Titulo
-      </p>
-      <p class="subtitle">
-        Hero subtitle
-      </p>
+      <div class="container has-text-centered">
+        <p class="title">
+          Titulo
+        </p>
+        <p class="subtitle">
+          Hero subtitle
+        </p>
+      </div>
     </div>
   </section>
 
   <section class="hero is-primary">
     <div class="hero-body">
-      <p class="title">
-        Primary hero
-      </p>
-      <p class="subtitle">
-        Primary subtitle
-      </p>
+      <div class="container has-text-centered">
+        <p class="title">
+          Nuestros productos
+        </p>
+        <p class="subtitle">
+          Primary subtitle
+        </p>
+      </div>
     </div>
   </section>
   <!-- Todavía no sé que hace esto pero lo dejaré aquí -->

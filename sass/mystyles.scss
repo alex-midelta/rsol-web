@@ -25,5 +25,5 @@ $link: $pink;
 // $input-border-color: transparent;
 // $input-shadow: none;
 
-// El import tiene que ir al último
+// Este import tiene que ir hasta acá o sobreescribe los cambios.
 @import "../node_modules/bulma/bulma.sass";
