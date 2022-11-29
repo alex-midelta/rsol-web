@@ -33,7 +33,7 @@ import HelloWorld from './components/HelloWorld.vue'
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
         <a class="navbar-item">
-          Home
+          Inicio
         </a>
 
         <a class="navbar-item">
