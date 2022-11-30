@@ -6,11 +6,14 @@ import router from './router'
 
 // CSS
 
+// Importamos Vuestic
 import { createVuestic } from 'vuestic-ui'
 import 'vuestic-ui/css'
 
 // Importamos Bulma
-// import './../node_modules/bulma/css/bulma.css'
+import './../node_modules/bulma/css/bulma.css'
+
+// Nuestros propios estilos
 import './../css/mystyles.css'
 
 // Este es el CSS que viene por defecto al crear el proyecto.
