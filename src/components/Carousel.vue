@@ -19,7 +19,8 @@ export default {
 
 <template>
     <!-- <va-carousel :items="items" v-model="value" /> -->
-    <va-carousel :items="items" stateful autoscroll infinite>
+    <va-carousel :items="items" v-model="value" :indicators="false" stateful autoscroll :autoscrollInterval="4000"
+        infinite swipable :ratio="14 / 6">
         <!-- <template #default="{ index }">
             {{ index + 1 }}
         </template> -->
