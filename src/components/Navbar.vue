@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="https://bulma.io">
                 <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
@@ -16,11 +16,14 @@
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
                 <a class="navbar-item">
-                    Inicio
+                    <RouterLink to="/">
+                        <h1 class="title is-4">Inicio</h1>
+                    </RouterLink>
                 </a>
-
                 <a class="navbar-item">
-                    Sobre nosotros
+                    <RouterLink to="/about">
+                        <h1 class="title is-4">Sobre nostros</h1>
+                    </RouterLink>
                 </a>
 
                 <!-- <div class="navbar-item has-dropdown is-hoverable">
@@ -49,27 +52,13 @@
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                        <!-- <a class="button is-primary">
-                            <strong>Sign up</strong>
-                        </a> -->
-                        <p class="control">
-                            <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet"
-                                data-social-target="https://bulma.io" target="_blank"
-                                href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
-                                <span class="icon">
-                                    <i class="fab fa-twitter"></i>
-                                </span>
-                                <span>
-                                    Tweet
-                                </span>
-                            </a>
-                        </p>
-                        <a class="button is-light">
-                            <span>
-                                <i class="fab fa-twitter"></i>
+                        <!-- Este botón está "estático" para que no sea "clickeable" (y a la vez "acitvo", para que no se vea gris) -->
+                        <a class="button is-light is-medium is-static is-active">
+                            <span class="icon">
+                                <font-awesome-icon icon="fa-solid fa-phone" />
                             </span>
                             <span>
-                                6671892304
+                                <strong>6671892304</strong>
                             </span>
                         </a>
                     </div>

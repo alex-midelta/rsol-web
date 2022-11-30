@@ -3,7 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 
 import NavbarVue from './components/Navbar.vue';
-import CarouselVue from './components/Carousel.vue';
+
 
 </script>
 
@@ -21,36 +21,18 @@ import CarouselVue from './components/Carousel.vue';
     </div>
   </header> -->
 
-  <!-- Barra de navegación -->
-  
   <NavbarVue></NavbarVue>
-  
-  <section class="hero is-small">
+
+  <!-- Esto nomás está aquí para hacer espacio -->
+  <section class="hero">
     <div class="hero-body">
-      <div class="container has-text-centered">
-        <CarouselVue></CarouselVue>
-        <!-- <p class="title">
-          Titulo
-        </p>
-        <p class="subtitle">
-          Hero subtitle
-        </p> -->
-      </div>
     </div>
   </section>
 
-  <section class="hero is-primary">
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <p class="title">
-          Nuestros productos
-        </p>
-        <p class="subtitle">
-          Primary subtitle
-        </p>
-      </div>
-    </div>
-  </section>
+  
+
+
+
   <!-- Todavía no sé que hace esto pero lo dejaré aquí -->
   <RouterView />
 </template>
