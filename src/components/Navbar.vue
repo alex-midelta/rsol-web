@@ -1,19 +1,38 @@
+<script lang="ts">
+
+export default {
+    data() {
+        return {
+            isHamburgerOpen: false,
+        }
+    },
+    methods: {
+        openHamburgerMenu() {
+            this.isHamburgerOpen = !this.isHamburgerOpen;
+        }
+    }
+}
+
+</script>
+
 <template>
     <nav class="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
+
         <div class="navbar-brand">
             <a class="navbar-item" href="https://bulma.io">
                 <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
             </a>
 
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
-                data-target="navbarBasicExample">
+            <a role="button" class="navbar-burger" :class="{ 'is-active': isHamburgerOpen }"
+           @click="openHamburgerMenu" aria-label="menu" aria-expanded="false"
+                data-target="navMenu">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
             </a>
         </div>
 
-        <div id="navbarBasicExample" class="navbar-menu">
+        <div id="navMenu" class="navbar-menu" :class="{ 'is-active': isHamburgerOpen }">
             <div class="navbar-start">
                 <a class="navbar-item">
                     <RouterLink to="/">
@@ -25,28 +44,6 @@
                         <h1 class="title is-4">Sobre nostros</h1>
                     </RouterLink>
                 </a>
-
-                <!-- <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-            More
-          </a>
-
-          <div class="navbar-dropdown">
-            <a class="navbar-item">
-              About
-            </a>
-            <a class="navbar-item">
-              Jobs
-            </a>
-            <a class="navbar-item">
-              Contact
-            </a>
-            <hr class="navbar-divider">
-            <a class="navbar-item">
-              Report an issue
-            </a>
-          </div>
-        </div> -->
             </div>
 
             <div class="navbar-end">
