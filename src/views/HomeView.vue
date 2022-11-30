@@ -4,61 +4,55 @@ import CarouselVue from '@/components/Carousel.vue';
 </script>
 
 <template>
-  
   <main>
-    
     <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <p class="title">
-          Nuestros productos
-        </p>
-        <CarouselVue></CarouselVue>
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <p class="title">
+            Nuestros productos
+          </p>
+          <CarouselVue></CarouselVue>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="hero is-primary">
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <p class="title">
-          Ofrecemos tal y tal
-        </p>
-        <p class="subtitle">
-          Primary subtitle
-        </p>
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <p class="title">
+            Ofrecemos tal y tal
+          </p>
+          <p class="subtitle">
+            Primary subtitle
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <p class="title">
-          Catálogo
-        </p>
-        <p class="subtitle">
-          Hero subtitle
-        </p>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <p class="title">
+            Catálogo
+          </p>
+          <p class="subtitle">
+            Hero subtitle
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="hero is-primary">
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <p class="title">
-          Primary hero
-        </p>
-        <p class="subtitle">
-          Primary subtitle
-        </p>
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <p class="title">
+            Primary hero
+          </p>
+          <p class="subtitle">
+            Primary subtitle
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
   </main>
 </template>
-
-<style>
-
-</style>

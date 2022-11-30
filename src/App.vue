@@ -29,11 +29,7 @@ import NavbarVue from './components/Navbar.vue';
     </div>
   </section>
 
-  
-
-
-
-  <!-- Todavía no sé que hace esto pero lo dejaré aquí -->
+  <!-- Aquí se ponen las vistas -->
   <RouterView />
 </template>
 
