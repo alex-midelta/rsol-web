@@ -18,13 +18,13 @@ export default {
     <nav class="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
 
         <div class="navbar-brand">
-            <a class="navbar-item" href="https://bulma.io">
-                <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+            <a class="navbar-item" href="https://alex-midelta.github.io/rsol-web/">
+                <!-- <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"> -->
+                <h1 class="title is-t1">RSOL</h1>
             </a>
 
-            <a role="button" class="navbar-burger" :class="{ 'is-active': isHamburgerOpen }"
-           @click="openHamburgerMenu" aria-label="menu" aria-expanded="false"
-                data-target="navMenu">
+            <a role="button" class="navbar-burger" :class="{ 'is-active': isHamburgerOpen }" @click="openHamburgerMenu"
+                aria-label="menu" aria-expanded="false" data-target="navMenu">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -33,16 +33,12 @@ export default {
 
         <div id="navMenu" class="navbar-menu" :class="{ 'is-active': isHamburgerOpen }">
             <div class="navbar-start">
-                <a class="navbar-item">
-                    <RouterLink to="/">
-                        <h1 class="title is-4">Inicio</h1>
-                    </RouterLink>
-                </a>
-                <a class="navbar-item">
-                    <RouterLink to="/about">
-                        <h1 class="title is-4">Sobre nostros</h1>
-                    </RouterLink>
-                </a>
+                <RouterLink to="/" class="navbar-item">
+                    <strong>Inicio</strong>
+                </RouterLink>
+                <RouterLink to="/about" class="navbar-item">
+                    <strong>Sobre nosotros</strong>
+                </RouterLink>
             </div>
 
             <div class="navbar-end">
