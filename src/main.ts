@@ -19,6 +19,9 @@ import './../css/mystyles.css'
 // Este es el CSS que viene por defecto al crear el proyecto.
 // import './assets/main.css'
 
+
+
+
 // Font Awesome Icons
 /* add fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -28,6 +31,9 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faCircle, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 library.add(faCircle, faPhone)
+
+
+
 
 const app = createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon)

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import TheWelcome from '../components/TheWelcome.vue'
 import CarouselVue from '@/components/Carousel.vue';
+import Tasks from '@/components/Tasks.vue';
 </script>
 
 <template>
@@ -8,6 +9,8 @@ import CarouselVue from '@/components/Carousel.vue';
     <section class="hero is-small">
       <div class="hero-body">
         <div class="container has-text-centered">
+          <Tasks></Tasks>
+          <br>
           <p class="title">
             Nuestros productos
           </p>
