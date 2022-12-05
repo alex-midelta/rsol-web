@@ -7,21 +7,11 @@ const todosCollectionRef = collection(db, 'todos')
 const todosCollectionQuery = query(todosCollectionRef, orderBy('content', 'asc'), limit(3));
 
 const todos = ref([
-    // {
-    //     id: 'id1',
-    //     content: 'Testing task.',
-    //     done: false
-    // },
-    // {
-    //     id: 'id2',
-    //     content: 'Also a testing task.',
-    //     done: true
-    // },
-    // {
-    //     id: 'id3',
-    //     content: 'Last one.',
-    //     done: false
-    // }
+    {
+        id: 'id1',
+        content: '...',
+        done: false
+    }
 ])
 
 onMounted(async() => {
