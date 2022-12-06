@@ -9,6 +9,9 @@ export default {
     methods: {
         openHamburgerMenu() {
             this.isHamburgerOpen = !this.isHamburgerOpen;
+        },
+        closeHamburgerMenu(){
+            this.isHamburgerOpen = false;
         }
     }
 }
@@ -33,10 +36,16 @@ export default {
 
         <div id="navMenu" class="navbar-menu" :class="{ 'is-active': isHamburgerOpen }">
             <div class="navbar-start">
-                <RouterLink to="/" class="navbar-item">
+                <RouterLink to="/" class="navbar-item" @click="closeHamburgerMenu">
                     <strong>Inicio</strong>
                 </RouterLink>
-                <RouterLink to="/about" class="navbar-item">
+                <RouterLink to="/catalogo" class="navbar-item" @click="closeHamburgerMenu">
+                    <strong>Catálogo</strong>
+                </RouterLink>
+                <RouterLink to="/chatbot" class="navbar-item" @click="closeHamburgerMenu">
+                    <strong>Chatbot</strong>
+                </RouterLink>
+                <RouterLink to="/about" class="navbar-item" @click="closeHamburgerMenu">
                     <strong>Sobre nosotros</strong>
                 </RouterLink>
             </div>

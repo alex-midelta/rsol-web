@@ -3,6 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 
 import NavbarVue from './components/Navbar.vue';
+import Footer from './components/Footer.vue';
 
 
 </script>
@@ -31,6 +32,10 @@ import NavbarVue from './components/Navbar.vue';
 
   <!-- Aquí se ponen las vistas -->
   <RouterView />
+
+  <!-- Footer -->
+  <Footer></Footer>
+
 </template>
 
 <style>
