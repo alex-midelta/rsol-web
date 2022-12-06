@@ -2,9 +2,10 @@
   <section class="hero">
     <div class="hero-body">
       <div class="container has-text-centered">
-        <p class="title is-1">
+        <img src="@/assets/logo_rsol_alt.png" width="800">
+        <!-- <p class="title is-1">
           Radiosoluciones en comunicación
-        </p>
+        </p> -->
         <p class="subtitle">
           Hero subtitle
         </p>

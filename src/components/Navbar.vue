@@ -10,7 +10,7 @@ export default {
         openHamburgerMenu() {
             this.isHamburgerOpen = !this.isHamburgerOpen;
         },
-        closeHamburgerMenu(){
+        closeHamburgerMenu() {
             this.isHamburgerOpen = false;
         }
     }
@@ -22,8 +22,10 @@ export default {
 
         <div class="navbar-brand">
             <a class="navbar-item" href="https://alex-midelta.github.io/rsol-web/">
-                <!-- <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"> -->
-                <h1 class="title is-t1">RSOL</h1>
+                <figure class="image">
+                    <img src="@/assets/logo_rsol_navbar.png" >
+                </figure>
+                <!-- <h1 class="title is-t1">RSOL</h1> -->
             </a>
 
             <a role="button" class="navbar-burger" :class="{ 'is-active': isHamburgerOpen }" @click="openHamburgerMenu"
