@@ -1,8 +1,16 @@
 <script setup lang="ts">
-    import Tasks from '@/components/Tasks.vue';
+import Catalogo from '@/components/Catalogo.vue';
 </script>
 
 <template>
-    <h1>Catálogo</h1>
-    <Tasks></Tasks>
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <p class="title">
+                    Catálogo
+                </p>
+                <Catalogo></Catalogo>
+            </div>
+        </div>
+    </section>
 </template>
