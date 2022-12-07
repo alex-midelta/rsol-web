@@ -20,7 +20,7 @@
           Misión
         </p>
         <p class="subtitle">
-          Primary subtitle
+          Aquí va la misión...
         </p>
       </div>
     </div>
@@ -33,7 +33,7 @@
           Visión
         </p>
         <p class="subtitle">
-          Hero subtitle
+          Y aquí va la visión...
         </p>
       </div>
     </div>
