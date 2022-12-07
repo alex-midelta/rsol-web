@@ -61,7 +61,7 @@ export default {
                                 <font-awesome-icon icon="fa-solid fa-phone" />
                             </span>
                             <span>
-                                <strong>667-712-0726</strong>
+                                <strong><a href="tel:+526677120726">667-712-0726</a></strong>
                             </span>
                         </a>
                     </div>

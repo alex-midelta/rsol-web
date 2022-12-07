@@ -34,14 +34,11 @@ import CarouselVue from '@/components/Carousel.vue';
       <div class="hero-body">
         <div class="container has-text-centered">
           <p class="title">
-            Catálogo
+            Ubicación
           </p>
-          <p class="subtitle">
-            Hero subtitle
-          </p>
+          <iframe width="1000" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJgxWaWkPXvIYRXKBIGi7pXOw&key=AIzaSyAVdHkwZCWgJFMwGPkzIWA5XB1AR_J3ehM"></iframe> 
         </div>
       </div>
     </section>
-
   </main>
 </template>
