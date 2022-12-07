@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
 :root {
-  --va-carousel-min-height: 400px; }
+  --va-carousel-min-height: 400px;
+  --card-header-background-color: $primary; }
 
 /*! bulma.io v0.9.4 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */

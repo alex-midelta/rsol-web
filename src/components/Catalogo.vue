@@ -46,26 +46,6 @@ onMounted(async () => {
 
 const newCatalogoContent = ref('');
 
-// const addTodo = () => {
-//     const newTodo = {
-//         id: 'id1',
-//         content: newTodoContent.value,
-//         done: false
-//     }
-//     // console.log('newTodo:', newTodo);
-//     catalogo.value.unshift(newTodo);
-//     newTodoContent.value = '';
-// }
-
-// const deleteTodo = (id: any) => {
-//     catalogo.value = catalogo.value.filter(todo => todo.id !== id)
-// }
-
-// const toggleDone = (id: any) => {
-//     const index = catalogo.value.findIndex(todo => todo.id === id)
-//     catalogo.value[index].done = !catalogo.value[index].done;
-// }
-
 </script>
 
 <template>
@@ -84,53 +64,129 @@ const newCatalogoContent = ref('');
             </div>
         </form>
 
-        <div v-for="producto in catalogo" class="card mb-5"
-            :class="{ 'has-background-success-light': producto.disponibilidad }">
-            <div class="card-content">
-
-                <header class="card-header">
-                    <p class="card-header-title">
-                        {{ producto.modelo }}
-                    </p>
-                    <!-- <button class="card-header-icon" aria-label="more options">
-                        <span class="icon">
-                            <i class="fas fa-angle-down" aria-hidden="true"></i>
-                        </span>
-                    </button> -->
-                </header>
-
-                <div class="content">
-                    <div class="columns is-mobile is-vcentered">
-                        <div class="column has-text-left">
+        <div class="tile is-ancestor">
+            <div class="tile is-4">
+                <div v-for="producto in catalogo" class="card mb-5"
+                    :class="{ 'has-background-success-light': producto.disponibilidad }">
+                    <div class="card box">
+    
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                {{ producto.modelo }}
+                            </p>
+                            <!-- <button class="card-header-icon" aria-label="more options">
+                            <span class="icon">
+                                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                            </span>
+                        </button> -->
+                        </header>
+    
+                        <div class="card-image">
                             <figure class="image is-128x128">
                                 <img :src="producto.imagen" alt="">
                             </figure>
-                            <div class="row">
-                                <!-- <strong>Marca:</strong> -->
-                                <p>{{ producto.marca }}</p>
-                            </div>
-                            <div class="row">
-                                <p>{{ producto.manual }}</p>
+                        </div>
+    
+                        <div class="card-content">
+                            <div class="columns is-mobile is-vcentered">
+    
+                                <!-- <div class="column is-one-quarter has-text-left">
+    
+                                <div class="row">
+                                    <strong>Marca:</strong>
+                                    <p>{{ producto.marca }}</p>
+                                </div>
+                                <div class="row">
+                                    <p>{{ producto.manual }}</p>
+                                </div>
+                            </div> -->
+    
+                                <div class="has-text-left">
+                                    {{ producto.descripcion }}
+                                </div>
+    
+                                <!-- <div class="column">
+                                <button class="button"
+                                    :class="producto.disponibilidad ? 'is-success' : 'is-light'">
+                                    &check;
+                                </button>
+                                <button class="button is-danger ml-2">
+                                    &cross;
+                                </button>
+                            </div> -->
                             </div>
                         </div>
-
-                        <div class="column has-text-left">
-                            {{ producto.descripcion }}
-                        </div>
-
-                        <!-- <div class="column">
-                            <button class="button"
-                                :class="producto.disponibilidad ? 'is-success' : 'is-light'">
-                                &check;
-                            </button>
-                            <button class="button is-danger ml-2">
-                                &cross;
-                            </button>
-                        </div> -->
+    
                     </div>
                 </div>
-
             </div>
+        </div>
+
+        <div class="tile is-ancestor">
+            <div class="tile is-vertical">
+                <div class="tile">
+                    <!-- <div class="tile is-parent is-vertical">
+                        <article class="tile is-child box">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora enim cumque beatae totam quis quos illum velit ipsam ullam impedit odio recusandae quo nulla quam, qui at maxime mollitia sequi?
+                        </article>
+                        <article class="tile is-child box">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium culpa atque repellat, aut sapiente eius suscipit inventore nobis, alias velit in laudantium tempore voluptate minus vitae? Totam at tempore ea!
+                        </article>
+                    </div> -->
+                    <div class="tile is-parent">
+                        <article class="tile is-child box">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quidem. Tempora aut explicabo dolorum architecto labore delectus sit repellendus fuga soluta exercitationem dicta nisi cumque tenetur, rerum saepe cupiditate dolorem?
+                        </article>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child box">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem a, asperiores adipisci aperiam iusto, exercitationem dolor numquam quis provident corporis suscipit incidunt deleniti eum debitis doloribus quia atque aliquam dolore.
+                        </article>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child box">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores sit distinctio tenetur animi ipsam maxime ut. Quisquam ex vero, voluptatum tempora blanditiis aut quas sit nemo iusto eum maxime libero.
+                        </article>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child box">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores sit distinctio tenetur animi ipsam maxime ut. Quisquam ex vero, voluptatum tempora blanditiis aut quas sit nemo iusto eum maxime libero.
+                        </article>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child box">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores sit distinctio tenetur animi ipsam maxime ut. Quisquam ex vero, voluptatum tempora blanditiis aut quas sit nemo iusto eum maxime libero.
+                        </article>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child box">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores sit distinctio tenetur animi ipsam maxime ut. Quisquam ex vero, voluptatum tempora blanditiis aut quas sit nemo iusto eum maxime libero.
+                        </article>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child box">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores sit distinctio tenetur animi ipsam maxime ut. Quisquam ex vero, voluptatum tempora blanditiis aut quas sit nemo iusto eum maxime libero.
+                        </article>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child box">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores sit distinctio tenetur animi ipsam maxime ut. Quisquam ex vero, voluptatum tempora blanditiis aut quas sit nemo iusto eum maxime libero.
+                        </article>
+                    </div>
+                </div>
+                <!-- <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iusto ipsum explicabo vel omnis perferendis tempore quidem dicta possimus! Minima voluptatibus ad cum quasi placeat? Accusantium saepe obcaecati nihil tempore.
+                    </article>
+                </div> -->
+                
+            </div>
+            <!-- <div class="tile is-parent">
+                <article class="tile is-child box">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi suscipit, atque rerum necessitatibus alias reiciendis.
+                </article>
+            </div> -->
+            
         </div>
 
     </div>
