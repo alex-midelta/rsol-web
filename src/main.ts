@@ -29,8 +29,9 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import { faCircle, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faCircle, faPhone)
+library.add(faCircle, faPhone, faFacebook, faTwitter, faInstagram )
 
 
 

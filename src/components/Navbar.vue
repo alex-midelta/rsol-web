@@ -45,7 +45,7 @@ export default {
                     <strong>Catálogo</strong>
                 </RouterLink>
                 <RouterLink to="/chatbot" class="navbar-item" @click="closeHamburgerMenu">
-                    <strong>Chatbot</strong>
+                    <strong>Asistencia en linea</strong>
                 </RouterLink>
                 <RouterLink to="/about" class="navbar-item" @click="closeHamburgerMenu">
                     <strong>Sobre nosotros</strong>
@@ -61,7 +61,7 @@ export default {
                                 <font-awesome-icon icon="fa-solid fa-phone" />
                             </span>
                             <span>
-                                <strong><a href="#">667 712 0726</a></strong>
+                                <strong>667 712 0726</strong>
                             </span>
                         </a>
                     </div>
