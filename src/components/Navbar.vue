@@ -42,7 +42,7 @@ export default {
                     <strong>Inicio</strong>
                 </RouterLink>
                 <RouterLink to="/catalogo" class="navbar-item" @click="closeHamburgerMenu">
-                    <strong>Catálogo</strong>
+                    <strong>Nuestros productos</strong>
                 </RouterLink>
                 <RouterLink to="/chatbot" class="navbar-item" @click="closeHamburgerMenu">
                     <strong>Asistencia en linea</strong>

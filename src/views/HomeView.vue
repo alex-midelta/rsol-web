@@ -20,11 +20,18 @@ import CarouselVue from '@/components/Carousel.vue';
     <section class="hero is-primary">
       <div class="hero-body">
         <div class="container has-text-centered">
-          <p class="title">
-            Ofrecemos tal y tal
+          <div class="container has-text-centered">
+            <img src="@/assets/logo_rsol_navbar.png" width="330px">
+          </div>
+          <br> 
+          <p class="subtitle has-text-justified">
+            En <strong>Radiosoluciones en Comunicación S.A. de C.V.</strong>, nos dedicamos, desde hace más de 15 años, a la implementación de sistemas de radiocomunicación con la mejor tecnología y los mejores equipos que existen en el mercado de Culiacán, Sinaloa.
           </p>
-          <p class="subtitle">
-            Primary subtitle
+          <p class="subtitle has-text-justified">
+            Además, implementamos sistemas solares interconectados a la <strong>CFE</strong>. Ofrecemos venta, asesoría, servicios de instalación y mantenimiento de sistemas de radiocomunicación digital y convencional, lo que nos hace una empresa que ofrece atención completa.
+          </p>
+          <p class="subtitle has-text-justified">
+            Distribuimos marcas élite de <strong>Kenwood</strong> y realizamos trámites de permisos ante el <strong>IFETEL</strong>.
           </p>
         </div>
       </div>
