@@ -54,14 +54,36 @@ const newCatalogoContent = ref('');
     <div>
         <form>
             <div class="field is-grouped mb-5">
-                <p class="control is-expanded">
+                <!-- <p class="control is-expanded">
                     <input v-model="newCatalogoContent" class="input" type="text" placeholder="Add a todo">
                 </p>
                 <p class="control">
                     <button :disabled="!newCatalogoContent" class="button is-info">
                         Add
                     </button>
-                </p>
+                </p> -->
+
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label">Categoría</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field is-narrow">
+                            <div class="control">
+                                <div class="select is-fullwidth is-primary">
+                                    <select>
+                                        <option value="1">Todos</option>
+                                        <option value="2">Radios</option>
+                                        <option value="3">Repetidores</option>
+                                        <option value="4">Paneles solares</option>
+                                        <option value="5">Cámaras de seguridad</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </form>
 
@@ -89,21 +111,24 @@ const newCatalogoContent = ref('');
 
                     <div class="card-content">
                         <div class="columns is-mobile is-vcentered">
-
-                            <!-- <div class="column is-one-quarter has-text-left">
-    
+                            <div class="rows">
                                 <div class="row">
-                                    <strong>Marca:</strong>
-                                    <p>{{ producto.marca }}</p>
+                                    <div class="container">
+                                        <p class="title is-4">${{ producto.precio }}</p>
+                                    </div>
                                 </div>
-                                <div class="row">
-                                    <p>{{ producto.manual }}</p>
+                                <div class="row box">
+                                    <ModalVue :modelo="producto.modelo" :descripcion="producto.descripcion"
+                                        :imagen="producto.imagen">
+                                    </ModalVue>
+                                    <br>
+                                    <a :href="producto.manual" target="_blank"><button class="button">
+                                            <span class="icon is-small">
+                                                <font-awesome-icon icon="fa-solid fa-book" />
+                                            </span>
+                                        </button>
+                                    </a>
                                 </div>
-                            </div> -->
-
-                            <div class="has-text-left">
-                                <!-- {{ producto.descripcion }} -->
-                                {{ producto.precio }}
                             </div>
 
                             <!-- <div class="column">
@@ -120,8 +145,7 @@ const newCatalogoContent = ref('');
 
                 </div>
 
-                <ModalVue :modelo="producto.modelo" :descripcion="producto.descripcion" :imagen="producto.imagen">
-                </ModalVue>
+
 
             </div>
         </div>

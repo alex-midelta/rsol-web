@@ -28,10 +28,10 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 /* add some free styles */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-import { faCircle, faPhone, faWalkieTalkie } from '@fortawesome/free-solid-svg-icons'
+import { faCircle, faPhone, faWalkieTalkie, faBook} from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faCircle, faPhone, faFacebook, faTwitter, faInstagram, faWalkieTalkie )
+library.add(faCircle, faPhone, faFacebook, faTwitter, faInstagram, faWalkieTalkie, faBook)
 
 
 
