@@ -18,7 +18,8 @@ export default {
     </va-button>
     <va-modal v-model="showCustomContent" no-padding>
         <template #content="{ ok }">
-            <va-image :ratio="16 / 9" :src="imagen" />
+            <!-- <va-image :ratio="16 / 9" :src="imagen" /> -->
+            <img :src="imagen" alt="">
             <va-card-title>
                 {{ modelo }}
             </va-card-title>
