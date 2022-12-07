@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
 
 // declare const window: any;
 
@@ -47,7 +47,7 @@
 //   }
 // }
 
-</script>
+</script> -->
 
 <template>
   <div class="km-script-container">
