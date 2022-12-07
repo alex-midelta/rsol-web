@@ -10,7 +10,7 @@ import CarouselVue from '@/components/Carousel.vue';
       <div class="hero-body">
         <div class="container has-text-centered">
           <p class="title">
-            Nuestros productos
+            Radiosoluciones en Comunicación
           </p>
           <CarouselVue></CarouselVue>
         </div>
