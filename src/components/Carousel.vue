@@ -5,9 +5,12 @@ export default {
         return {
             value: 0,
             items: [
-                'https://picsum.photos/1500',
-                'https://picsum.photos/1501',
-                'https://picsum.photos/1502',
+                // 'https://picsum.photos/1500',
+                // 'https://picsum.photos/1501',
+                // 'https://picsum.photos/1502',
+                'https://radioskenwood.cl/wp-content/uploads/2020/08/2.jpg',
+                'https://www.climafrv.com/blog/wp-content/uploads/2018/01/ventajas-energia-solar-e1515578784410.jpg',
+                'https://cdn.forbes.com.mx/2021/08/camara.jpg',
             ],
         }
     },

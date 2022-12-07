@@ -7,7 +7,6 @@ const catalogoCollectionRef = collection(db, 'productos')
 // const catalogoCollectionQuery = query(catalogoCollectionRef, orderBy('modelo', 'asc'), limit(3));
 const catalogoCollectionQuery = query(catalogoCollectionRef, orderBy('modelo', 'asc'));
 
-
 const catalogo = ref([
     {
         id: '',
@@ -88,6 +87,7 @@ const newCatalogoContent = ref('');
         <div v-for="producto in catalogo" class="card mb-5"
             :class="{ 'has-background-success-light': producto.disponibilidad }">
             <div class="card-content">
+
                 <header class="card-header">
                     <p class="card-header-title">
                         {{ producto.modelo }}
@@ -129,6 +129,7 @@ const newCatalogoContent = ref('');
                         </div> -->
                     </div>
                 </div>
+
             </div>
         </div>
 
