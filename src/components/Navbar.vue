@@ -61,7 +61,7 @@ export default {
                                 <font-awesome-icon icon="fa-solid fa-phone" />
                             </span>
                             <span>
-                                <strong>6671892304</strong>
+                                <strong><a href="#">667 712 0726</a></strong>
                             </span>
                         </a>
                     </div>
